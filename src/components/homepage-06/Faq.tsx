@@ -24,24 +24,21 @@ const Faq = () => {
       </div>
       <RevealAnimation delay={0.4}>
         <div>
-          <Accordion
-            className="max-w-[770px] mx-auto space-y-6"
-            defaultValue="1"
-            enableScrollAnimation={true}
-            animationDelay={0.1}>
+            <Accordion
+              type="single"
+              className="max-w-[770px] mx-auto space-y-6"
+              defaultValue="1">
             {faqData.map((item) => (
               <AccordionItem
                 className="bg-background-2 dark:bg-background-5 rounded-[20px] px-4 sm:px-8"
                 key={item.id}
                 value={item.id.toString()}>
-                <AccordionTrigger
-                  titleClassName="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-                  className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8"
-                  value={item.id.toString()}
-                  iconType="arrow">
-                  {item.question}
+                <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8">
+                  <span className="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
+                    {item.question}
+                  </span>
                 </AccordionTrigger>
-                <AccordionContent value={item.id.toString()}>{item.answer}</AccordionContent>
+                <AccordionContent>{item.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

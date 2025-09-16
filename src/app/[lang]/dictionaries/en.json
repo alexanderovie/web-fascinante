@@ -1,0 +1,54 @@
+{
+  "navigation": {
+    "home": "Home",
+    "pages": "Pages",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "getStarted": "Get started"
+  },
+  "hero": {
+    "title": "Leading companies around the globe rely on nexSaas",
+    "description": "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it, and it actually has no meaning."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Leading companies around the globe rely on nexSaas.",
+    "subtitle": "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it, and it actually has no meaning.",
+    "readMore": "Read more"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "heading": "Blog"
+  },
+  "cta": {
+    "badge": "Get started",
+    "title": "Build a complete website using the assistance",
+    "description": "Start your free trial today and see your ideas come to life easily and creatively.",
+    "button": "Get started",
+    "placeholder": "Enter your email",
+    "noCreditCard": "No credit card required",
+    "freeTrial": "14-Day free trial"
+  },
+  "footer": {
+    "description": "Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "career": "Career",
+    "caseStudies": "Case Studies",
+    "contactUs": "Contact Us",
+    "support": "Support",
+    "faq": "FAQ",
+    "documentation": "Documentation",
+    "tutorial": "Tutorial",
+    "support": "Support",
+    "legalPolicies": "Legal Policies",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "refundPolicy": "Refund Policy",
+    "gdprCompliance": "GDPR Compliance",
+    "affiliatePolicy": "Affiliate Policy",
+    "copyright": "Copyright ©Fascinante Digital – smart application for modern business"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "pages": "Páginas",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "blog": "Blog",
+    "contact": "Contáctanos",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Las empresas líderes del mundo confían en nexSaas",
+    "description": "Hasta hace poco, la opinión predominante asumía que lorem ipsum nació como un texto sin sentido. No es latín, aunque lo parezca, y en realidad no tiene significado."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "description": "Las empresas líderes del mundo confían en nexSaas.",
+    "subtitle": "Hasta hace poco, la opinión predominante asumía que lorem ipsum nació como un texto sin sentido. No es latín, aunque lo parezca, y en realidad no tiene significado.",
+    "readMore": "Leer más"
+  },
+  "blog": {
+    "title": "Nuestro Blog",
+    "heading": "Blog"
+  },
+  "cta": {
+    "badge": "Comenzar",
+    "title": "Construye un sitio web completo usando la asistencia",
+    "description": "Comienza tu prueba gratuita hoy y ve tus ideas cobrar vida de manera fácil y creativa.",
+    "button": "Comenzar",
+    "placeholder": "Ingresa tu email",
+    "noCreditCard": "No se requiere tarjeta de crédito",
+    "freeTrial": "Prueba gratuita de 14 días"
+  },
+  "footer": {
+    "description": "Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.",
+    "company": "Empresa",
+    "aboutUs": "Acerca de Nosotros",
+    "career": "Carreras",
+    "caseStudies": "Casos de Estudio",
+    "contactUs": "Contáctanos",
+    "support": "Soporte",
+    "faq": "Preguntas Frecuentes",
+    "documentation": "Documentación",
+    "tutorial": "Tutorial",
+    "support": "Soporte",
+    "legalPolicies": "Políticas Legales",
+    "termsConditions": "Términos y Condiciones",
+    "privacyPolicy": "Política de Privacidad",
+    "refundPolicy": "Política de Reembolso",
+    "gdprCompliance": "Cumplimiento GDPR",
+    "affiliatePolicy": "Política de Afiliados",
+    "copyright": "Copyright ©Fascinante Digital – aplicación inteligente para empresas modernas"
+  }
+}

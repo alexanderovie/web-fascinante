@@ -43,9 +43,7 @@ const ChangelogTab = () => {
   return (
     <Accordion
       className="mx-auto w-full max-w-[850px] space-y-4"
-      defaultValue="1"
-      enableScrollAnimation={true}
-      animationDelay={0.1}>
+      defaultValue="1">
       {faqData.map((item) => (
         <AccordionItem
           className="dark:bg-background-7 rounded-[20px] bg-white px-6 sm:px-8"

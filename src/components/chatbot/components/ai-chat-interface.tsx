@@ -1,50 +1,29 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import {
   ArrowUpIcon,
-  MicIcon,
   Paperclip,
   SquareIcon,
   ThumbsDownIcon,
   ThumbsUpIcon,
   X
 } from "lucide-react";
-import { CodeIcon, CopyIcon } from "@radix-ui/react-icons";
-import Lottie from "lottie-react";
+import { CopyIcon } from "@radix-ui/react-icons";
 
-import {
-  Input,
-  PromptInputAction,
-  PromptInputActions,
-  PromptInputTextarea
-} from "@/components/ui/custom/prompt/input";
-import { Button } from "@/components/ui/button";
-import { ChatContainer } from "@/components/ui/custom/prompt/chat-container";
-import {
-  Message,
-  MessageAction,
-  MessageActions,
-  MessageContent
-} from "@/components/ui/custom/prompt/message";
 import { Markdown } from "@/components/ui/custom/prompt/markdown";
-import { PromptLoader } from "@/components/ui/custom/prompt/loader";
-import { PromptScrollButton } from "@/components/ui/custom/prompt/scroll-button";
 import { AIUpgradePricingModal } from "./ai-upgrade-modal";
-import aiSphereAnimation from "../ai-sphere-animation.json";
+
 import { useChatbot } from "@/hooks/useChatbot";
 
 export default function AIChatInterface() {
   const [prompt, setPrompt] = useState("");
   const [files, setFiles] = useState<File[]>([]);
   const uploadInputRef = useRef<HTMLInputElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const bottomRef = useRef<HTMLDivElement>(null);
 
   // Usar el hook de chatbot con Gemini
-  const { messages, isStreaming, sendMessage, clearChat } = useChatbot();
+  const { messages, isStreaming, sendMessage } = useChatbot();
 
   const isFirstResponse = messages.length > 0;
 

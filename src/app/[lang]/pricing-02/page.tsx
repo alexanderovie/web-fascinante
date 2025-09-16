@@ -1,5 +1,4 @@
 import Client from '@/components/pricing-02/Client';
-import Faq from '@/components/pricing-02/Faq';
 import Pricing from '@/components/pricing-02/Pricing';
 import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterOne from '@/components/shared/footer/FooterOne';
@@ -24,7 +23,6 @@ const Pricing02 = () => {
         <PageHero title="Pricing 02" heading="Pricing 02 " link="/pricing-02" />
         <Pricing />
         <Client />
-        <Faq />
         <CTAV1
           className="dark:bg-background-5 bg-background-1"
           badgeText="Get started"

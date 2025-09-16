@@ -24,20 +24,18 @@ const ProcessFaq = () => {
         </div>
 
         <RevealAnimation delay={0.4}>
-          <Accordion className="sm:max-w-[850px] max-w-full sm:mx-auto space-y-4" defaultValue="1" animationDelay={0.1}>
+          <Accordion type="single" className="sm:max-w-[850px] max-w-full sm:mx-auto space-y-4" defaultValue="1">
             {faqItems.map((faq) => (
               <AccordionItem
                 key={faq.id}
                 className="bg-background-1 dark:bg-background-6 rounded-[20px] sm:px-8 px-6"
                 value={faq.id.toString()}>
-                <AccordionTrigger
-                  titleClassName="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-                  className=" flex items-center cursor-pointer justify-between sm:pt-8 pt-6 sm:pb-8 pb-6 w-full"
-                  value={faq.id.toString()}
-                  iconType="arrow">
-                  {faq.question}
+                <AccordionTrigger className=" flex items-center cursor-pointer justify-between sm:pt-8 pt-6 sm:pb-8 pb-6 w-full">
+                  <span className="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
+                    {faq.question}
+                  </span>
                 </AccordionTrigger>
-                <AccordionContent value={faq.id.toString()}>{faq.answer}</AccordionContent>
+                <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

@@ -1,5 +1,4 @@
 import Testimonial from '@/components/homepage-03/Testimonial';
-import FAQ from '@/components/homepage-12/FAQ';
 import CTA from '@/components/our-team-01/CTA';
 import Experience from '@/components/our-team-01/Experience';
 import Teams from '@/components/our-team-01/Teams';
@@ -30,7 +29,6 @@ const OurTeam01 = () => {
           title="Hear from our customers about their experiences with us"
           classname="pt-20 md:pt-24 lg:pt-[150px] xl:pt-[200px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-background-2 dark:bg-background-5"
         />
-        <FAQ className="bg-white dark:bg-background-5 py-[50px] md:py-[70px] lg:py-[85px] xl:py-[100px]" />
         <CTA />
       </main>
       <FooterThree />

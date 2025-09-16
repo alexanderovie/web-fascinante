@@ -25,24 +25,21 @@ const WhyUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-18 lg:gap-x-[97px]">
           <RevealAnimation delay={0.3}>
             <div className="space-y-6 pt-[30px] order-2 lg:order-none">
-              <Accordion
-                className="w-full max-w-[850px] space-y-4"
-                defaultValue="1"
-                enableScrollAnimation={true}
-                animationDelay={0.1}>
+                <Accordion
+                  type="single"
+                  className="w-full max-w-[850px] space-y-4"
+                  defaultValue="1">
                 {faqData.map((item) => (
                   <AccordionItem
                     className="px-8 border border-stroke-4 dark:border-stroke-6 rounded-[20px]"
                     key={item.id}
                     value={item.id.toString()}>
-                    <AccordionTrigger
-                      titleClassName="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-                      className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8"
-                      value={item.id.toString()}
-                      iconType="arrow">
-                      {item.question}
+                    <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8">
+                      <span className="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
+                        {item.question}
+                      </span>
                     </AccordionTrigger>
-                    <AccordionContent value={item.id.toString()}>{item.answer}</AccordionContent>
+                    <AccordionContent>{item.answer}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>

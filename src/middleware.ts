@@ -23,10 +23,7 @@ export function middleware(request: NextRequest) {
   )
 
   if (pathnameHasLocale) {
-    // Add pathname to headers for not-found.tsx to access
-    const response = NextResponse.next()
-    response.headers.set('x-pathname', pathname)
-    return response
+    return NextResponse.next()
   }
 
   // Redirect if there is no locale - default to English

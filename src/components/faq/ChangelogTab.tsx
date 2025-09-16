@@ -42,6 +42,7 @@ export const faqData = [
 const ChangelogTab = () => {
   return (
     <Accordion
+      type="single"
       className="mx-auto w-full max-w-[850px] space-y-4"
       defaultValue="1">
       {faqData.map((item) => (

@@ -1,24 +1,20 @@
-# Fascinante Digital - Professional Website with AI Chatbot
+# Fascinante Digital - Professional Website
 
-A modern, professional website for Fascinante Digital, a digital marketing agency specializing in SEO, SEM, Google Ads, and comprehensive digital marketing solutions. Built with Next.js 15, featuring an advanced AI chatbot powered by Gemini AI and DataForSEO integration.
+A modern, professional website for Fascinante Digital, a digital marketing agency specializing in SEO, SEM, Google Ads, and comprehensive digital marketing solutions. Built with Next.js 15, ready for advanced AI chatbot integration.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black)
 ![React](https://img.shields.io/badge/React-19.1.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-blue)
-![Gemini AI](https://img.shields.io/badge/Gemini%20AI-2.0%20Flash-orange)
-![DataForSEO](https://img.shields.io/badge/DataForSEO-API-green)
 
 ## 🚀 Features
 
-### 🤖 **Advanced AI Chatbot**
-- **Gemini 2.0 Flash Integration** - Latest Google AI model
-- **DataForSEO Integration** - Real-time SEO analysis and insights
-- **Professional ChatGPT-style Interface** - Clean, modern design
-- **Elite Features** - Monitoring, metrics, circuit breakers, rate limiting
+### 🤖 **AI Chatbot Ready**
+- **OpenAI Integration Ready** - Prepared for advanced AI chatbot integration
+- **Professional Interface** - Clean, modern design ready for implementation
 - **Multilingual Support** - Spanish and English
-- **File Upload Support** - Images and documents
-- **Streaming Responses** - Real-time AI responses
+- **File Upload Support** - Ready for document and image processing
+- **Streaming Responses** - Prepared for real-time AI responses
 
 ### 🎨 **Modern Design System**
 - **Professional UI/UX** - Clean, modern design with consistent branding
@@ -34,19 +30,16 @@ A modern, professional website for Fascinante Digital, a digital marketing agenc
 - **SEO Optimized** - Proper metadata for each language
 
 ### 📊 **SEO & Analytics**
-- **Real-time SEO Analysis** - DataForSEO integration
-- **Keyword Research** - Advanced keyword analysis tools
-- **Competitor Analysis** - Domain and SERP analysis
-- **Trend Analysis** - Market trend insights
+- **SEO Optimized** - Built-in SEO best practices
 - **Performance Monitoring** - Built-in analytics and metrics
+- **Analytics Ready** - Prepared for advanced analytics integration
 
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 15.4.6 with App Router
 - **Language**: TypeScript 5.0
 - **Styling**: Tailwind CSS 4.0
-- **AI Integration**: Google Gemini 2.0 Flash
-- **SEO Data**: DataForSEO API
+- **AI Ready**: Prepared for OpenAI integration
 - **Animations**: GSAP 3.13, Lenis smooth scrolling
 - **Maps**: Leaflet with React integration
 - **Theme**: next-themes for dark/light mode
@@ -59,8 +52,7 @@ Before getting started, ensure you have:
 - **Node.js** 18.0 or higher
 - **pnpm** package manager (recommended)
 - **Git** for version control
-- **Google Gemini API Key** for chatbot functionality
-- **DataForSEO Credentials** for SEO analysis
+- **OpenAI API Key** (for future chatbot integration)
 
 ## 🚀 Quick Start
 
@@ -82,16 +74,11 @@ pnpm install
 Create a `.env.local` file in the root directory:
 
 ```env
-# Gemini AI Configuration
-GEMINI_API_KEY=your_gemini_api_key_here
-
-# DataForSEO Configuration
-DATAFORSEO_LOGIN=your_dataforseo_login
-DATAFORSEO_PASSWORD=your_dataforseo_password
-DATAFORSEO_BASE_URL=https://api.dataforseo.com/v3
-
 # Next.js Configuration
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# OpenAI Configuration (for future integration)
+# OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 4. Start Development Server

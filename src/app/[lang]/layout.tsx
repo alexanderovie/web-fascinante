@@ -1,6 +1,5 @@
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import { ThemeProvider } from '@/components/shared/ThemeProvider';
-import { ChatbotProvider, ChatbotFloatingButton, ChatbotWrapper } from '@/components/chatbot';
 import { geist } from '@/utils/font';
 import { ReactNode, Suspense } from 'react';
 import '../globals.css';
@@ -22,13 +21,9 @@ export default async function RootLayout({
     <html lang={lang} suppressHydrationWarning>
       <body className={`${geist.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <ChatbotProvider>
-            <Suspense fallback={<div>Loading...</div>}>
-              <SmoothScrollProvider>{children}</SmoothScrollProvider>
-            </Suspense>
-            <ChatbotFloatingButton />
-            <ChatbotWrapper />
-          </ChatbotProvider>
+          <Suspense fallback={<div>Loading...</div>}>
+            <SmoothScrollProvider>{children}</SmoothScrollProvider>
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>

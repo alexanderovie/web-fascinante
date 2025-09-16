@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.1",
-    "@google/generative-ai": "^0.24.1",
     "@gsap/react": "^2.1.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -47,7 +46,6 @@
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
     "cmdk": "^1.1.1",
-    "dataforseo-client": "^2.0.6",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "gray-matter": "^4.0.3",

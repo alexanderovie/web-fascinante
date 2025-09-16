@@ -50,14 +50,12 @@ const ChangelogTab = () => {
           className="dark:bg-background-7 rounded-[20px] bg-white px-6 sm:px-8"
           key={item.id}
           value={item.id.toString()}>
-          <AccordionTrigger
-            titleClassName="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-            className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8"
-            value={item.id.toString()}
-            iconType="arrow">
-            {item.question}
+          <AccordionTrigger className="flex w-full cursor-pointer items-center justify-between pt-5 pb-5 sm:pt-8 sm:pb-8">
+            <span className="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
+              {item.question}
+            </span>
           </AccordionTrigger>
-          <AccordionContent value={item.id.toString()}>{item.answer}</AccordionContent>
+          <AccordionContent>{item.answer}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>

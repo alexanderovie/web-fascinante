@@ -3,16 +3,10 @@ import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
-import getMarkDownContent from '@/utils/getMarkDownContent';
-import getMarkDownData from '@/utils/getMarkDownData';
+// Removed unused imports
 import { Metadata } from 'next';
 
-export async function generateStaticParams() {
-  const blogs = getMarkDownData('src/data/blogs');
-  return blogs.map((post) => ({
-    slug: post.slug,
-  }));
-}
+// Dynamic route - no static generation for now
 
 export const metadata: Metadata = {
   title: 'Blog Details - Fascinante Digital',
@@ -21,7 +15,12 @@ export const metadata: Metadata = {
 const BlogDetails = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const slug = (await params).slug;
 
-  const blogContent = getMarkDownContent('src/data/blogs/', slug);
+  // For now, return a placeholder - we'll implement proper blog loading later
+  const blogContent = {
+    title: 'Blog Post',
+    content: 'This is a placeholder blog post.',
+    slug: slug
+  };
 
   return (
     <>

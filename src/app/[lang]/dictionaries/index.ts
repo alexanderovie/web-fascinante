@@ -13,3 +13,5 @@ export async function getDictionary(lang: 'en' | 'es'): Promise<Dictionary> {
       return en;
   }
 }
+
+

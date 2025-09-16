@@ -7,9 +7,7 @@ const nextConfig: NextConfig = {
       '@public': './public',
     },
   },
-  experimental: {
-    serverComponentsExternalPackages: ['@formatjs/intl-localematcher', 'negotiator'],
-  },
+  serverExternalPackages: ['@formatjs/intl-localematcher', 'negotiator'],
   images: {
     remotePatterns: [
       {
